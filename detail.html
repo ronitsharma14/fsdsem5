@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items Detail</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .container {
+      width: 500px;
+      border: 2px solid #000;
+      padding: 10px;
+    }
+    .title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed; /* Fix column widths */
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 6px;
+      text-align: center;
+    }
+    th:nth-child(1), td:nth-child(1) { width: 50%; }
+    th:nth-child(2), td:nth-child(2) { width: 25%; }
+    th:nth-child(3), td:nth-child(3) { width: 25%; }
+
+    input {
+      width: 95%; /* Keep inputs inside cells */
+      box-sizing: border-box;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      border-top: 2px solid #000;
+      padding-top: 8px;
+    }
+    .thought, .date {
+      width: 48%;
+      border: 1px solid #000;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Items Detail</div>
+    
+    <table>
+      <tr>
+        <th>Products</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Product 1"></td>
+        <td><input type="number" placeholder="Price"></td>
+        <td><input type="number" placeholder="Qty"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Product 2"></td>
+        <td><input type="number" placeholder="Price"></td>
+        <td><input type="number" placeholder="Qty"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Product 3"></td>
+        <td><input type="number" placeholder="Price"></td>
+        <td><input type="number" placeholder="Qty"></td>
+      </tr>
+    </table>
+
+    <div class="bottom">
+      <div class="thought">Today's Thought</div>
+      <div class="date">Date:</div>
+    </div>
+  </div>
+</body>
+</html>
